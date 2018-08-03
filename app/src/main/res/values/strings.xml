@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Best of Balaton</string>
+    <string name="title_home">Home</string>
+    <string name="title_map">Map</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="contentDescription_placeholder">overridden on runtime</string>
+    <string name="image_preview_action_button">more info</string>
+    <string name="image_content_description">this is an image of %s</string>
+    <string name="network_error">Your device needs to be connected to the internet!</string>
+    <string name="attraction_error">At the moment it\'s not possible to retrieve the attraction information</string>
+    <string name="label_name">Name:</string>
+    <string name="label_category">Category</string>
+    <string name="label_information">General Information</string>
+    <string name="label_description">Description</string>
+    <string name="label_images">Images</string>
+    <string name="image_preview_description">This is a image preview</string>
+    <string name="image_widget_text">random attraction selected: tap for more info</string>
+    <string name="fab">Floating Fab</string>
+    <string name="contentImage">Content Image</string>
+    <!-- MAP KEY -->
+    <string name="google_maps_key" translatable="false">[Your key place]</string>
+</resources>

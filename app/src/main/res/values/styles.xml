@@ -1,0 +1,94 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="colorPrimaryDark">@color/white</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="AppTheme.Detail" parent="AppTheme">
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+    </style>
+
+    <style name="AttractionLabelTextView">
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:padding">@dimen/margin_2</item>
+        <item name="android:paddingEnd">@dimen/margin_4</item>
+        <item name="android:paddingStart">@dimen/margin_4</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/short_label_text_size</item>
+        <item name="android:layout_marginStart">@dimen/margin_16</item>
+        <item name="android:layout_marginTop">@dimen/margin_2</item>
+    </style>
+
+    <style name="BottomNavigation">
+        <item name="android:layout_width">@dimen/margin_0</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margin_2</item>
+        <item name="android:layout_marginEnd">@dimen/margin_0</item>
+        <item name="android:layout_marginStart">@dimen/margin_0</item>
+        <item name="android:background">@color/btn</item>
+        <item name="android:elevation">@dimen/elevation_4</item>
+    </style>
+
+    <style name="ContentImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:contentDescription">@string/label_images</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="FragmentFavorite">
+        <item name="android:layout_width">@dimen/margin_0</item>
+        <item name="android:layout_height">@dimen/margin_0</item>
+        <item name="android:layout_margin">@dimen/margin_16</item>
+    </style>
+
+    <style name="FragmentList">
+        <item name="android:layout_width">@dimen/margin_0</item>
+        <item name="android:layout_height">@dimen/margin_0</item>
+    </style>
+
+    <style name="FragmantMap">
+        <item name="android:layout_width">@dimen/margin_0</item>
+        <item name="android:layout_height">@dimen/margin_0</item>
+    </style>
+
+    <style name="ListRowName" parent="TextAppearance.AppCompat.Title.Inverse">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:background">@color/shadowed_text_background</item>
+        <item name="android:padding">@dimen/margin_16</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:transitionName">title_name</item>
+    </style>
+
+    <style name="MapInfoTitle">
+        <item name="android:layout_width">@dimen/margin_0</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margin_4</item>
+        <item name="android:background">@color/background</item>
+        <item name="android:elevation">@dimen/elevation_6</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MapInfoImg">
+        <item name="android:layout_width">@dimen/image_preview_width</item>
+        <item name="android:layout_height">@dimen/image_preview_height</item>
+        <item name="android:layout_margin">@dimen/margin_4</item>
+        <item name="android:layout_marginEnd">@dimen/margin_4</item>
+        <item name="android:layout_marginStart">@dimen/margin_4</item>
+        <item name="android:contentDescription">@string/contentDescription_placeholder</item>
+        <item name="android:transitionName">main_image</item>
+    </style>
+
+</resources>

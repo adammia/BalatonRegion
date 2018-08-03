@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="attraction"
+            type="miadesign.hu.best.balaton.entities.Attraction" />
+    </data>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/attraction_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/attraction_row_height">
+
+        <ImageView
+            android:id="@+id/attraction_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/placeholder"
+            android:contentDescription="@{attraction.getImageDescription(@string/image_content_description)}"
+            android:scaleType="centerCrop"
+            android:transitionName="main_image" />
+
+        <TextView
+            android:id="@+id/attraction_name"
+            style="@style/ListRowName"
+            android:text="@{attraction.getName()}"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+
+    </FrameLayout>
+
+</layout>

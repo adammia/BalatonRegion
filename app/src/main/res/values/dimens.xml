@@ -1,0 +1,23 @@
+<resources>
+    <dimen name="margin_0">0dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="padding_start">35dp</dimen>
+    <dimen name="elevation_4">4dp</dimen>
+    <dimen name="elevation_6">6dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="short_label_text_size">14sp</dimen>
+    <dimen name="short_default_text_size">18sp</dimen>
+    <dimen name="attraction_row_height">250dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_elevation">6dp</dimen>
+    <dimen name="appbar_elevation">4dp</dimen>
+    <dimen name="image_preview_width">170dp</dimen>
+    <dimen name="image_preview_height">170dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="layout_height">200dp</dimen>
+    <dimen name="widget_height">110dp</dimen>
+    <dimen name="widget_width">320dp</dimen>
+    <dimen name="pressedTranslationZ">12dp</dimen>
+    pressedTranslationZ
+</resources>

@@ -1,0 +1,80 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "miadesign.hu.best.balaton"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+    }
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword 'balaton'
+            storeFile file('keystore.jks')
+            storePassword 'balaton'
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.config
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+
+    dataBinding.enabled = true
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        disable 'GoogleAppIndexingWarning'
+    }
+
+}
+
+ext.supportlibs = "27.1.0"
+ext.retrofit = "2.3.0"
+ext.aac = "1.1.1"
+ext.room = "1.1.0"
+ext.dagger = "2.14.1"
+ext.map = "15.0.1"
+
+dependencies {
+    implementation "com.android.support:appcompat-v7:$supportlibs"
+    implementation "com.android.support:design:$supportlibs"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation "com.squareup.picasso:picasso:2.71828"
+    // retrofit & gson
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit"
+    // ViewModel and LiveData
+    implementation "android.arch.lifecycle:extensions:$aac"
+    implementation "android.arch.lifecycle:common-java8:$aac"
+    //room
+    implementation "android.arch.persistence.room:runtime:$room"
+    annotationProcessor "android.arch.persistence.room:compiler:$room"
+    // dagger
+    implementation "com.google.dagger:dagger:$dagger"
+    annotationProcessor "com.google.dagger:dagger-compiler:$dagger"
+    compileOnly "javax.annotation:jsr250-api:1.0"
+    // maps
+    implementation "com.google.android.gms:play-services-maps:$map"
+    implementation "com.google.android.gms:play-services-location:$map"
+    //firebase
+    implementation 'com.google.firebase:firebase-core:16.0.0'
+
+}
+apply plugin: 'com.google.gms.google-services'
